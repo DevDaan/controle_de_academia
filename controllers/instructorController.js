@@ -68,13 +68,28 @@ const instructorController = {
             return res.send("Instructor nof found!")
         }
 
-        //tratandos os dados que não estão aparecendo legal na view
 
+
+        //criando a lógica para arrumar a idade
+        function age(timestamp){
+            const atualDate = new Date()
+            const birthDate = new Date(timestamp)
+            
+            let age = atualDate.getFullYear() - birthDate.getFullYear()
+
+            const month = atualDate.getMonth() - birthDate.getMonth()
+
+            if (month < 0 || month == 0){}
+
+
+        }
+
+
+        //tratandos os dados que não estão aparecendo legal na view
         const instructor = {
             ...foundInstructor,
-            age: "",
-            gender: "",
-            services: "",
+            age: age(foundInstructor.birth),
+            services: foundInstructor.services.split(","),
             created_at: "",
         }
 

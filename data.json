@@ -6,7 +6,7 @@
             "name": "julia",
             "birth": 922752000000,
             "gender": "F",
-            "services": "NATAÇÃO",
+            "services": "NATAÇÃO, FUTEBOL, LUTA",
             "created_at": 1592012419708
         },
         {
@@ -26,6 +26,24 @@
             "gender": "M",
             "services": "ZUMBA",
             "created_at": 1592013329859
+        },
+        {
+            "id": 4,
+            "avatar_url": "https://images.unsplash.com/photo-1512353087810-25dfcd100962?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+            "name": "Daniel Nascimento",
+            "birth": 851817600000,
+            "gender": "M",
+            "services": "Musculação, crossfit, kickbox, jiu-jitsu",
+            "created_at": 1592016540518
+        },
+        {
+            "id": 5,
+            "avatar_url": "https://google.com",
+            "name": "teste",
+            "birth": 1614643200000,
+            "gender": "M",
+            "services": "CrossFit",
+            "created_at": 1592016648543
         }
     ]
 }
