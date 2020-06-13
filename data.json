@@ -1,0 +1,31 @@
+{
+    "instructors": [
+        {
+            "id": 1,
+            "avatar_url": "https://google.com",
+            "name": "julia",
+            "birth": 922752000000,
+            "gender": "F",
+            "services": "NATAÇÃO",
+            "created_at": 1592012419708
+        },
+        {
+            "id": 2,
+            "avatar_url": "https://google.com",
+            "name": "Daniel Vieira",
+            "birth": 851817600000,
+            "gender": "M",
+            "services": "MUSCULAÇÃO",
+            "created_at": 1592012443042
+        },
+        {
+            "id": 3,
+            "avatar_url": "https://tete.teste.com",
+            "name": "Daniel Vieira",
+            "birth": 674154759600000,
+            "gender": "M",
+            "services": "ZUMBA",
+            "created_at": 1592013329859
+        }
+    ]
+}
