@@ -213,7 +213,8 @@ input::placeholder{
 }
 
 
-button[type="submit"]{
+button[type="submit"],
+a.button{
     padding: 8px 32px;
     background-color: var(--color-rocket);
     border-radius: 4px;
@@ -221,6 +222,13 @@ button[type="submit"]{
     width: 100%;
     font-size: 16px;
     color: white;
+}
+
+
+a.button{
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
 
 

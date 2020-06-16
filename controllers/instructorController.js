@@ -79,9 +79,14 @@ const instructorController = {
 
             const month = atualDate.getMonth() - birthDate.getMonth()
 
-            if (month < 0 || month == 0){}
 
 
+            if (month < 0 || month == 0 || atualDate.getDate() <=
+             birthDate.getDate()){
+                age = age -1
+            }
+
+            return age
         }
 
 
@@ -90,7 +95,7 @@ const instructorController = {
             ...foundInstructor,
             age: age(foundInstructor.birth),
             services: foundInstructor.services.split(","),
-            created_at: "",
+            created_at: new Intl.DateTimeFormat("pt-BR").format(foundInstructor.created_at)
         }
 
 

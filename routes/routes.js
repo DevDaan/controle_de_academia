@@ -2,7 +2,7 @@ const express = require('express')
 const routes = express.Router()
 const controller = require('../controllers/instructorController')
 
-
+routes.get('/', controller.viewIndex)
 routes.get('/instructors', controller.viewIndex)
 routes.post('/instructors', controller.createInstructor)
 routes.get('/instructors/create', controller.viewFormInstructor)
