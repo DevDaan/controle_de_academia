@@ -102,6 +102,25 @@ const instructorController = {
         return res.render("instructors/show", {instructor})
     },
 
+
+    editInstructor: (req, res) =>{
+
+        let {id} = req.params
+        //validando se o ID passado no req.params existe no data.json como um instrutor cadastrado
+        const foundInstructor = data.instructors.find((instructor) =>{
+            return id == instructor.id  
+        })
+        //se eu não achar um instrutor
+        if (!foundInstructor){
+            return res.send("Instructor nof found!")
+        }
+
+
+
+
+        res.render('instructors/edit', {instructor: foundInstructor})
+    },
+
     viewMembers: (req, res) =>{
         res.render('members')
     }
